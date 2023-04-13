@@ -10,15 +10,23 @@
     align-items: center;
     height: 100vh;
     background-color: rgb(150, 252, 47);
+    flex-wrap: wrap;
 }
 
 .card{
     width: 30%;
-    height: 400px;
+    height: 260px;
     border-radius: 10px;
     background-color: #fff;
     margin: 15px;
     position: relative;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.card:hover{
+    height: 400px;
+    transition-delay: 0s;
 }
 
 .card-img img{
@@ -28,6 +36,33 @@
     top: -60px;
     margin: 0 40px;
     border-radius: 10px;
+}
+
+.details{
+    text-align: center;
+    position: relative;
+    top: -40px;
+    margin: 0 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0s;
+}
+
+.card:hover .details{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.5s;
+    
+}
+
+h2{
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 18px;
 }
 
 
