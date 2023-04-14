@@ -11,6 +11,7 @@
     height: 100vh;
     background-color: rgb(150, 252, 47);
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .card{
@@ -19,6 +20,7 @@
     border-radius: 10px;
     background-color: #fff;
     margin: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: relative;
     transition: 0.5s ease-in-out;
     transition-delay: 0.5s;
@@ -36,12 +38,13 @@
     top: -60px;
     margin: 0 40px;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .details{
     text-align: center;
     position: relative;
-    top: -40px;
+    top: -47px;
     margin: 0 40px;
     visibility: hidden;
     opacity: 0;
@@ -65,4 +68,63 @@ p{
     font-size: 18px;
 }
 
+
+@media only screen and (max-width: 1200px){
+    .card{
+        width: 25%;
+        height: 203px;
+    }
+
+    .card-img img{
+        width: 75%;
+        height: 200px;
+        margin: 0 37.5px;
+    }
+}
+
+
+@media only screen and (max-width: 1150px){
+    .card{
+        width: 25%;
+        height: 203px;
+    }
+
+    .card-img img{
+        width: 75%;
+        height: 200px;
+        margin: 0 35px;
+    }
+
+    h2{
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 27%;
+        height: 203px;
+    }
+    .card-img img{
+        width: 70%;
+        height: 190px;
+        margin: 0 40px;
+    }
+
+    h2{
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+}
 
